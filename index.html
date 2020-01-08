@@ -71,6 +71,13 @@
       margin-top: 20px;
       text-align: center;
     }
+    /* Clock */
+    .clock_texts{
+      color: black;
+      font-family: fantasy;
+      text-align: center;
+      padding-left: 32px;
+    }
 
     /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 800px) {
@@ -128,12 +135,17 @@
     </div>
     <!-- CLOCK -->
     <div class="card">
-      <p id="Clock"></p>
+      <h4><span style="color: #E96D02;">Current Time</span></h4>
+      <span id="date" class="clock_texts"></span>
+      <br>
+      <span id="clock" class="clock_texts"></span>
       <script>
-      var d = new Date();
-      document.getElementById("Clock").innerHTML = d.toLocaleDateString();
-      document.getElementById("Clock").innerHTML += d.toLocaleTimeString();
-      setTimeout(startTime, 100);
+        var myVar = setInterval(myTimer, 1000);
+        function myTimer() {
+            var d = new Date();
+            document.getElementById("date").innerHTML = d.toLocaleDateString();
+            document.getElementById("clock").innerHTML = d.toLocaleTimeString('en-US');
+        }
       </script>
     </div>
     <div class="card">
@@ -148,7 +160,7 @@
 <div class="footer">
   <a href="https://github.com/Deron5566">
     <img alt="Github" src="https://Deron5566.github.io/theme/images/github.png"
-    width="100px" height="100px">
+    width="50px" height="50px">
   </a>
 </div>
 
