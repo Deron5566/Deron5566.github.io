@@ -13,7 +13,7 @@
       box-sizing: border-box;
     }
 
-    /* Add a gray background color with some padding */
+    /* Add a pink background color with some padding */
     body {
       font-family: Verdana;
       padding: 20px;
@@ -24,7 +24,7 @@
     .header {
       padding: 30px;
       font-size: 35px;
-      text-align: center;
+      text-align: left;
       background-image: url("Deron5566.github.io/theme/images/header.jpg");
       background-repeat: no-repeat;
     }
@@ -74,8 +74,7 @@
     /* Clock */
     .clock_texts{
       color: black;
-      font-family: fantasy;
-      text-align: center;
+      font-family: Verdana;
       padding-left: 32px;
     }
 
@@ -98,6 +97,7 @@
 
 <div class="row">
   <div class="leftcolumn">
+    <!-- Hackmd -->
     <div class="card">
       <h2><span style="color:#E96D02;">Codes</span></h2>
       <h5>Hackmd, Jun 1, 2020</h5>
@@ -107,6 +107,7 @@
       </a>
       <p>Some codes and notes in Hackmd...</p>
     </div>
+    <!-- Playlsit -->
     <div class="card">
       <h2><span style="font-family : Microsoft YaHei; color: #E96D02;">一月推薦歌單</span></h2>
       <h5>Hip Hop, Jun 1, 2020</h5>
@@ -121,24 +122,27 @@
     </div>
   </div>
   <div class="rightcolumn">
+    <!-- About Me -->
     <div class="card">
       <h2><span style="color: #E96D02;">About Me</span></h2>
       <img alt="Deron" src="https://Deron5566.github.io/theme/images/wife3.jpg"
       width="100px" height="100px">
       <h3><span style="font-family : Microsoft JhengHei;">鄭博薪 Deron Zheng</span></h3>
       <ol>
-        <li>Senior High School : PTHS</li>
-        <li>University : National Tsing Hua University</li>
-        <li>Department : Computer Science</li>
-        <li>Grade : Freshman</li>
+        <li>Senior High School :<br>National Pingtung Senior High School</li>
+        <li>University :<br>National Tsing Hua University</li>
+        <li>Department :<br>Science</li>
+        <li>Grade :<br>Freshman</li>
       </ol>
     </div>
-    <!-- CLOCK -->
     <div class="card">
+      <!-- Clock -->
       <h4><span style="color: #E96D02;">Current Time</span></h4>
       <span id="date" class="clock_texts"></span>
       <br>
       <span id="clock" class="clock_texts"></span>
+      <p></p>
+      <!-- JS -->
       <script>
         var myVar = setInterval(myTimer, 1000);
         function myTimer() {
@@ -147,6 +151,9 @@
             document.getElementById("clock").innerHTML = d.toLocaleTimeString('en-US');
         }
       </script>
+      <!-- BGM -->
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/R3Lu3mWDFtg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
     </div>
     <div class="card">
       <h3><span style="color: #E96D02;">Follow Me</span></h3>
