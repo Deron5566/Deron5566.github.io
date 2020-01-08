@@ -25,7 +25,7 @@
       padding: 30px;
       font-size: 40px;
       text-align: center;
-      background: white;
+      background-image: url("Deron5566.github.io/theme/images/header.jpg");
     }
 
     /* Create two unequal columns that floats next to each other */
@@ -127,7 +127,13 @@
     </div>
     <!-- CLOCK -->
     <div class="card">
-      <script src="https://Deron5566.github.io/theme/js/time.js"></script>
+      <p id="Clock"></p>
+      <script>
+      var d = new Date();
+      document.getElementById("Clock").innerHTML = d.toLocaleDateString();
+      document.getElementById("Clock").innerHTML += d.toLocaleTimeString();
+      setTimeout(startTime, 100);
+      </script>
     </div>
     <div class="card">
       <h3>Follow Me</h3>
